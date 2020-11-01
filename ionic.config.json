@@ -1,0 +1,7 @@
+{
+  "name": "ForMusicians",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

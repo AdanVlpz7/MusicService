@@ -1,25 +1,32 @@
 <ion-header>
-  <ion-toolbar color = "light">
+  <ion-toolbar>
     <ion-title text-center>Log in</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>  
-
+<ion-content class="cont1">  
+  <div class ="body">
   <img class ="icon" src="assets/musicLogin.jpg" alt ="">
 
-  <ion-item>
-    <ion-label position = "floating"> email </ion-label>
-    <ion-input type = "text" [(ngModel)] = "email" name = "email"> </ion-input>
+  <ion-item class="inpLg">
+    <ion-label position = "floating" color="white"> email </ion-label>
+    <ion-input type = "text" [(ngModel)] = "email" name = "email" > </ion-input>
   </ion-item>
 
-  <ion-item>
-    <ion-label position = "floating"> password </ion-label>
+  <ion-item class="inpLg">
+    <ion-label position = "floating" color="white"> password </ion-label>
     <ion-input type = "password" [(ngModel)] = "password" name = "password"> </ion-input>
   </ion-item>
 
-  <!--Al presionar boton se dirige al metodo OnSubmitLogin de login.page.ts-->
-  <ion-button class = "submitBtn" shape = "round" size = "large" color = "light"
-  (click) = "OnSubmitLogin()"> Enter </ion-button> 
+  <ion-row>
+    <ion-col></ion-col>
+    <ion-col>
+      <!--Al presionar boton se dirige al metodo OnSubmitLogin de login.page.ts-->
+      <ion-button class = "submitBtn" shape = "round" size = "large" color = "light"
+      (click) = "OnSubmitLogin()"> Enter </ion-button> 
+    </ion-col>
+    <ion-col></ion-col>
+  </ion-row>
 
+  </div>
 </ion-content>

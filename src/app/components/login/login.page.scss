@@ -1,10 +1,19 @@
 .icon{
- display: center;
- height: 40%;
-    
+ display: top;
+ width: 100%;
+}
+.cont1{
+    --background:#242121;
 }
 .submitBtn{
-    display: center;
-    width: 30%;
-    background-position-x: center;
+    --background: #56e3cb;
+}
+.body{
+    background:#242121;
+    color:#242121;
+  }
+.inpLg{
+    --background:#242121;
+    --placeholder-color:#242121; 
+    --color:white;
 }

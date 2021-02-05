@@ -1,11 +1,21 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+  <ion-row>    
+    <ion-searchbar class="search-h"></ion-searchbar>
+  </ion-row>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-button (click) = "OnLogOut()"> Log Out </ion-button>
-</ion-content>
+<ion-content>
+  <div class="body" >
+    <ion-button class = "btn-h1"> Categorias </ion-button>
+    <ion-button (click) = "OnLogOut()"> Log Out </ion-button>
+  </div>
+</ion-content>  
+
+
+<ion-footer>
+  <ion-row class="footer">
+    <ion-col> <ion-button class = "btn-f1"> Home </ion-button> </ion-col>
+    <ion-col> <ion-button class = "btn-f1"> Contrataciones </ion-button> </ion-col>
+    <ion-col> <ion-button class = "btn-f1"> Account </ion-button> </ion-col>
+  </ion-row>
+</ion-footer>

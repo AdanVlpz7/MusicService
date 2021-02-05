@@ -20,12 +20,27 @@
   --border-style:none;
   --box-shadow:none;
 }
+
 .footElements{
   list-style-type: none;
   padding:0;
   margin : 0;
   width: 100%;
 }
+.cardMenu{
+  --background:#242121;
+  color:white;
+}
+.cardImg{
+  width: 100%;
+}
+.btn-c1{
+  --background:#242121;
+  --background-hover: #444444;
+  --border-style:none;
+  --box-shadow:none;
+}
+//botones del footer--buttons from the footer
 .btn-f1{
   display: block;
   padding: 4px;
@@ -39,3 +54,4 @@
   background:#242121;
   color:#242121;
 }
+

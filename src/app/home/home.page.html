@@ -7,15 +7,71 @@
 <ion-content>
   <div class="body" >
     <ion-button class = "btn-h1"> Categorias </ion-button>
-    <ion-button (click) = "OnLogOut()"> Log Out </ion-button>
+    <!--Menu cards-->
+    <ion-list class="body">
+
+      <ion-card class="cardMenu">
+        <img src="https://ep01.epimg.net/verne/imagenes/2019/12/30/articulo/1577713724_057547_1577721099_noticia_normal.jpg" class ="cardImg">
+        <ion-card-header>
+          <ion-card-subtitle>DJ</ion-card-subtitle>
+          <ion-card-title color ="white">Mario Garcia</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          DJ para fiestas con luces incluidas
+        </ion-card-content>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col><ion-button class = "btn-c1">Contactar</ion-button></ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+      </ion-card>
+
+      <ion-card class="cardMenu">
+        <img src="https://los40.com/los40/imagenes/2016/10/21/musica/1477047965_579658_1601553974_gigante_normal.jpg" class ="cardImg">
+        <ion-card-header>
+          <ion-card-subtitle>Cantante</ion-card-subtitle>
+          <ion-card-title color ="white">Martha Sifuentes</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Para serenatas, repertorio amplio
+        </ion-card-content>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col><ion-button class = "btn-c1">Contactar</ion-button></ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+      </ion-card>
+
+      <ion-card class="cardMenu">
+        <img src="https://www.roc21.com/blog/wp-content/uploads/2015/07/retratos-con-recortes-de-papel.jpg" class ="cardImg">
+        <ion-card-header>
+          <ion-card-subtitle>Retratos</ion-card-subtitle>
+          <ion-card-title color ="white">Diana Lopez</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Retratos en oleo o papel
+        </ion-card-content>
+        <ion-row>
+          <ion-col></ion-col>
+          <ion-col><ion-button class = "btn-c1">Contactar</ion-button></ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+      </ion-card>
+
+    </ion-list>
+    <ion-button (click) = "OnLogOut()" class = "btn-h1"> Log Out </ion-button>
   </div>
 </ion-content>  
 
 
 <ion-footer>
   <ion-row class="footer">
-    <ion-col> <ion-button class = "btn-f1"> Home </ion-button> </ion-col>
-    <ion-col> <ion-button class = "btn-f1"> Contrataciones </ion-button> </ion-col>
-    <ion-col> <ion-button class = "btn-f1"> Account </ion-button> </ion-col>
+    <ion-col> 
+      <ion-button class = "btn-f1" href="/home"> <ion-icon name="home-outline"></ion-icon></ion-button> 
+    </ion-col>
+    <ion-col> <ion-button class = "btn-f1"> Hirings </ion-button> </ion-col>
+    <ion-col> 
+      <ion-button class = "btn-f1"> <ion-icon name="person-circle-outline"></ion-icon></ion-button> 
+    </ion-col>
   </ion-row>
 </ion-footer>
